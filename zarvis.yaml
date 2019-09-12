@@ -7,3 +7,4 @@ deploy:
 ingress:
   - service: buildpack-service
     port: 8080
+    serviceName: mulggimpyo
