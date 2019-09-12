@@ -1,0 +1,9 @@
+apiVersion: beta/v1
+deploy:
+  buildpack:
+    builder: heroku/buildpacks:18
+    service: buildpack-service
+    port: 8080
+ingress:
+  - service: buildpack-service
+    port: 8080
